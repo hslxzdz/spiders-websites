@@ -9,7 +9,6 @@ chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--headless')
 browser = webdriver.Chrome(chrome_options=chrome_options)
 browser.get('http://s.taobao.com')
-# browser = webdriver.PhantomJS()
 
 wait = WebDriverWait(browser,2)
 mongo=MongoClient()
