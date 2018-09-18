@@ -43,7 +43,7 @@ def get_page(page):
         wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'#mainsrp-itemlist .items .item')))
         print(i+1)
         for index,item in enumerate(crawl()):
-            save_to_mongo(item)
+            # save_to_mongo(item)
             print(index,item)
         next_page = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,'.form .input.J_Input')))
         next_page.clear()
